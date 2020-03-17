@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<button class="btn">按钮</button>
+
+<script>
+    let btn=document.querySelector('.btn');
+    let cont=0;
+    btn.onclick=function (){
+        let arr1='ABCEFGHJK';
+        let arr2='QWERTYUIOPASDFGHJKLZXCVBNM0123456789';
+        let result='京';
+        result+=arr1.charAt(Math.round(Math.random()*(8-0)+0));
+        for(let i=0;i<5;i++){
+             result+=arr2.charAt(Math.round(Math.random()*(35-0)+0))
+        }
+        if(cont++<3){
+        alert(result)
+        }else{
+            alert('已摇三次')
+        }
+    }
+</script>
+<script>
+    
+</script>
+
+    
+</body>
+</html>
